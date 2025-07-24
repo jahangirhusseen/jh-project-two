@@ -1,13 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <!-- Header -->
+    <header>
+      <nav class="mx-auto max-w-[1170px] flex justify-between items-center p-4">
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            class="w-20 md:w-32"
+            src="./images/logo.png"
+            alt="Company Logo"
+          />
+        </a>
+
+        <!--  Menu and Cart -->
+        <div class="flex items-center gap-8">
+          <!-- Menu -->
+          <ul class="hidden sm:flex items-center gap-6 text-[#8987A1]">
+            <li><a href="#" class="hover:text-[#252432]">Home</a></li>
+            <li><a href="#" class="hover:text-[#252432]">Shop</a></li>
+            <li><a href="#" class="hover:text-[#252432]">About us</a></li>
+          </ul>
+          <!-- Cart Button -->
+          <button class="flex items-center gap-2 text-[#252432]">
+            <img
+              src="./images/shopping-cart.png"
+              alt="Cart img"
+              class="w-6 h-6"
+            /><span>Cart ($56)</span>
+          </button>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
